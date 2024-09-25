@@ -1,12 +1,14 @@
 body {
   background: rgb(2, 0, 36);
-  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 24%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 24%, rgba(0, 212, 255, 1) 100%) no-repeat;
+  background-size: cover;
   color: white;
   font-family: "Bai Jamjuree", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
 }
 
@@ -18,6 +20,12 @@ button {
   border-radius: 3px;
   border: none;
   border: solid 1px white;
+}
+
+p {
+  width: 40vw; 
+  height: 10vh;
+  text-align: justify;
 }
 
 .gap_1 {
@@ -41,30 +49,10 @@ button:hover {
 
 main {
   text-align: center;
-  max-width: 90%;
 }
 
 img {
-  max-width: 90%;
+  width: 40vw;
   border-radius: 12px;
 }
 
-.escrita {
-  overflow: hidden;
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  animation:
-    typing 1s forwards;
-  font-size: 1.6rem;
-  width: 0;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
-}
